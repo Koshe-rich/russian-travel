@@ -1,0 +1,144 @@
+/* Add Fonts */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter'),
+		url("/fonts/Inter-Regular.woff2") format('woff2'), 
+		url("/fonts/Inter-Regular.woff") format('woff'),
+		url("/fonts/Inter-Regular.ttf") format('ttf'),
+}
+
+
+.page {
+    width: 100%;
+    background-color: #2A2C2F;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    width: 92.5%;
+    max-width: 1184px;
+    height: 52px;
+    margin: auto;
+    display: flex;
+    margin-top: 28px;
+}
+
+.header__lang-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    line-height: 1.17;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header__lang-link:first-of-type {
+    text-decoration: underline;
+    margin-right: 18px;
+    margin-left: auto;
+}
+.header__logo {
+    width: 176px;
+    height: 52px;
+}
+
+.lead {
+
+}
+.lead__title {
+
+}
+.lead__subtitle {
+
+}
+.lead__image {
+
+}
+.lead__caption {
+
+}
+.intro {
+
+}
+.intro__title {
+
+}
+.intro__text {
+
+}
+.intro__list {
+
+}
+.photo-grid {
+
+}
+.photo-grid__item {
+
+}
+.places {
+
+}
+.place {
+
+}
+.place__title {
+
+}
+.place__image {
+
+}
+.place__website {
+
+}
+.place__url-heading {
+}
+
+.place__link {
+
+}
+.place__patahraph {
+
+}
+.place__paragraph {
+
+}
+.cover {
+
+}
+.cover__title {
+
+}
+.cover__subtitle {
+
+}
+.cover__overlay {
+
+}
+.cover__background {
+
+}
+.footer {
+
+}
+.footer__link {
+
+}
+.footer__copyright {
+
+}
+
+@media (max-width: 1024px) {
+    .header {
+        width: 90.6%;
+        max-width: 928px;
+        height: 52px;
+    }
+    
+}
