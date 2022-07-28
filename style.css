@@ -23,7 +23,8 @@
     max-width: 1184px;
     width: 92.5%;
     height: 52px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     margin-top: 28px;
 }
@@ -51,19 +52,60 @@
 }
 
 .lead {
+    max-width: 984px;
+    max-height: 1005px;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 .lead__title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1.04;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 720px;
 
 }
 .lead__subtitle {
-
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    font-style: normal;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 72px;
+    max-width: 640px;
 }
 .lead__image {
-
+    max-width: 100%;
+    margin-top: 64px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .lead__caption {
-
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    margin-right: auto;
 }
 .intro {
 
@@ -135,24 +177,49 @@
 
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1024px) {
     .header {
         width: 90.6%;
         max-width: 928px;
     }
+
+    .lead {
+        max-width: 928px;
+        max-height: 962px;
+        margin-top: 48px;
+    }
+
+    .lead__image {
+        margin-top: 56px;
+    }
     
+
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .header {
         width: 93.75%;
         max-width: 720px;
         height: 52px;
     }
-    
+
+    .lead {
+        max-width: 768px;
+        max-height: 862px;
+    }
+
+    .lead__caption {
+        margin-left: 24px;
+    }
+
+    .lead__image {
+        margin-top: 56px;
+    }
 }
 
-@media (max-width: 340px) {
+
+
+@media (max-width: 320px) {
     .header {
         width: 90%;
         max-width: 288px;
@@ -170,5 +237,31 @@
         font-size: 18px;
         margin-top: 14px;
         margin-bottom: 8px;
+    }
+
+    .lead {
+        max-width: 320px;
+        max-height: 406px;
+    }
+    .lead__title {
+        font-size: 40px;
+        line-height: 1.1;
+        max-width: 288px;
+    }
+
+    .lead__subtitle {
+        font-size: 16px;
+        font-weight: 1.25;
+        min-height: 40px;
+        max-width: 288px;
+        margin-top: 16px;
+    }
+    
+    .lead__caption {
+        margin-left: 18px;
+    }
+
+    .lead__image {
+        margin-top: 40px;
     }
 }
