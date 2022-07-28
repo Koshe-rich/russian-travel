@@ -20,8 +20,8 @@
     flex-direction: column;
 }
 .header {
-    width: 92.5%;
     max-width: 1184px;
+    width: 92.5%;
     height: 52px;
     margin: auto;
     display: flex;
@@ -37,6 +37,7 @@
     line-height: 1.17;
     font-size: 24px;
     font-weight: 400;
+    text-align: right;
 }
 
 .header__lang-link:first-of-type {
@@ -134,11 +135,40 @@
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1050px) {
     .header {
         width: 90.6%;
         max-width: 928px;
+    }
+    
+}
+
+@media (max-width: 780px) {
+    .header {
+        width: 93.75%;
+        max-width: 720px;
         height: 52px;
     }
     
+}
+
+@media (max-width: 340px) {
+    .header {
+        width: 90%;
+        max-width: 288px;
+        height: 42px;
+        margin-top: 16px;
+    }
+
+    .header__logo {
+        width: 142px;
+        height: 42px;
+    }
+    
+    .header__lang-link {
+        line-height: 1.11;
+        font-size: 18px;
+        margin-top: 14px;
+        margin-bottom: 8px;
+    }
 }
