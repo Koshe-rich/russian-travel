@@ -121,7 +121,6 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    border: solid rebeccapurple;
 }
 
 .lead__caption {
@@ -183,9 +182,18 @@
     margin-top: 33px;
 }
 
-.photo-grid {}
+/* Block Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 92px;
+}
 
-.photo-grid__item {}
+.photo-grid__item {
+    max-width: 100%;
+}
 
 .places {}
 
