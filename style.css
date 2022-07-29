@@ -1,14 +1,13 @@
 /* Add Fonts */
 @font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Inter'),
-		url("/fonts/Inter-Regular.woff2") format('woff2'), 
-		url("/fonts/Inter-Regular.woff") format('woff'),
-		url("/fonts/Inter-Regular.ttf") format('ttf'),
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter'),
+        url("/fonts/Inter-Regular.woff2") format('woff2'),
+        url("/fonts/Inter-Regular.woff") format('woff'),
+        url("/fonts/Inter-Regular.ttf") format('ttf'),
 }
-
 
 .page {
     width: 100%;
@@ -19,10 +18,19 @@
     display: flex;
     flex-direction: column;
 }
+
+.container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white;
+}
+
+/* Block Header */
 .header {
     max-width: 1184px;
     width: 92.5%;
-    height: 52px;
+    min-height: 52px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -41,16 +49,27 @@
     text-align: right;
 }
 
+.header__lang-link:hover {
+    /* Все ссылки и интерактивные элементы имеют состояние наведения :hover. */
+    opacity: 80%;
+}
+
 .header__lang-link:first-of-type {
-    text-decoration: underline;
     margin-right: 18px;
     margin-left: auto;
 }
-.header__logo {
-    width: 176px;
-    height: 52px;
+
+.header__lang-link_active {
+    /* Используется булевый БЭМ-модификатор для подчёркивания одного из языков. */
+    text-decoration: underline;
 }
 
+.header__logo {
+    width: 176px;
+    min-height: 52px;
+}
+
+/* Block Lead */
 .lead {
     max-width: 984px;
     max-height: 1005px;
@@ -61,6 +80,7 @@
     flex-direction: column;
 
 }
+
 .lead__title {
     color: #FFFFFF;
     font-weight: 900;
@@ -74,6 +94,7 @@
     max-width: 720px;
 
 }
+
 .lead__subtitle {
     color: #FFFFFF;
     font-weight: 400;
@@ -88,14 +109,21 @@
     min-height: 72px;
     max-width: 640px;
 }
+
 .lead__image {
-    max-width: 100%;
+    background-image: url(/images/lead-polka.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 615px;
     margin-top: 64px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    object-fit: cover;
+    border: solid rebeccapurple;
 }
+
 .lead__caption {
     margin-top: 8px;
     font-size: 10px;
@@ -107,78 +135,97 @@
     color: #FFFFFF;
     margin-left: 0px;
     margin-right: auto;
+    margin-bottom: 0px;
 }
+
+/* Block Intro */
 .intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 690px;
+    margin-top: 92px;
+    margin-left: 11.5%;
+    margin-right: 34.5%;
+    margin-left: 148px;
+    margin-right: auto;
 
 }
+
 .intro__title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 1.07;
+    max-width: 690px;
+    margin-top: 0;
+    margin-bottom: 0;
+
 
 }
+
 .intro__text {
-
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 1.63;
+    margin-top: 40px;
+    margin-bottom: 0%;
 }
+
 .intro__list {
-
-}
-.photo-grid {
-
-}
-.photo-grid__item {
-
-}
-.places {
-
-}
-.place {
-
-}
-.place__title {
-
-}
-.place__image {
-
-}
-.place__website {
-
-}
-.place__url-heading {
+    color: #FFFFFF;
+    list-style-type: none;
+    padding-left: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    margin-top: 33px;
 }
 
-.place__link {
+.photo-grid {}
 
-}
-.place__patahraph {
+.photo-grid__item {}
 
-}
-.place__paragraph {
+.places {}
 
-}
-.cover {
+.place {}
 
-}
-.cover__title {
+.place__title {}
 
-}
-.cover__subtitle {
+.place__image {}
 
-}
-.cover__overlay {
+.place__website {}
 
-}
-.cover__background {
+.place__url-heading {}
 
-}
-.footer {
+.place__link {}
 
-}
-.footer__link {
+.place__patahraph {}
 
-}
-.footer__copyright {
+.place__paragraph {}
 
-}
+.cover {}
 
+.cover__title {}
+
+.cover__subtitle {}
+
+.cover__overlay {}
+
+.cover__background {}
+
+.footer {}
+
+.footer__link {}
+
+.footer__copyright {}
+
+/* Breakpoint w-1024px */
 @media (max-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
     .header {
         width: 90.6%;
         max-width: 928px;
@@ -186,22 +233,30 @@
 
     .lead {
         max-width: 928px;
-        max-height: 962px;
+        min-height: 962px;
         margin-top: 48px;
     }
 
     .lead__image {
         margin-top: 56px;
+        min-height: 580px;
     }
-    
+
+    .intro {
+        margin-left: 48px;
+    }
 
 }
 
+/* Breakpoint w-768px */
 @media (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
     .header {
         width: 93.75%;
         max-width: 720px;
-        height: 52px;
+        min-height: 52px;
     }
 
     .lead {
@@ -215,24 +270,35 @@
 
     .lead__image {
         margin-top: 56px;
+        min-height: 480px;
+    }
+
+    .intro {
+        max-width: 690px;
+        margin-top: 88px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 }
 
 
-
+/* Breakpoint w-320px */
 @media (max-width: 320px) {
+    .container {
+        width: 320px;
+    }
     .header {
         width: 90%;
         max-width: 288px;
-        height: 42px;
+        min-height: 42px;
         margin-top: 16px;
     }
 
     .header__logo {
         width: 142px;
-        height: 42px;
+        min-height: 42px;
     }
-    
+
     .header__lang-link {
         line-height: 1.11;
         font-size: 18px;
@@ -242,8 +308,9 @@
 
     .lead {
         max-width: 320px;
-        max-height: 406px;
+        min-height: 406px;
     }
+
     .lead__title {
         font-size: 40px;
         line-height: 1.1;
@@ -257,12 +324,39 @@
         max-width: 288px;
         margin-top: 16px;
     }
-    
+
     .lead__caption {
         margin-left: 18px;
     }
 
     .lead__image {
         margin-top: 40px;
+        min-height: 200px;
+    }
+
+    .intro {
+        max-width: 288px;
+        margin-top: 64px;
+    }
+
+    .intro__list {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 0px;
+        margin-top: 34px;
+    }
+
+    .intro__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.63;
+        margin-bottom: 0px;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.09;
     }
 }
