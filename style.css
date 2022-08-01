@@ -2,11 +2,23 @@
 @font-face {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: normal;
-    src: local('Inter'),
+    font-weight: 400;
+    src: local('Inter normal'),
         url("/fonts/Inter-Regular.woff2") format('woff2'),
         url("/fonts/Inter-Regular.woff") format('woff'),
-        url("/fonts/Inter-Regular.ttf") format('ttf'),
+        url("/fonts/Inter-Regular.ttf") format('truetype'),
+        url("/fonts/Inter-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter bold'),
+    url('/fonts/Inter-Black.woff2') format('woff2'),
+    url("/fonts/Inter-Black.woff") format('woff'),
+    url("/fonts/Inter-Black.ttf") format('truetype'),
+    url("/fonts/Inter-Black.otf") format('opentype');
+    font-style: normal;
+    font-weight: 900;
 }
 
 .page {
@@ -186,9 +198,9 @@
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 16px;
     margin-top: 92px;
+    margin-bottom: 0px;
 }
 
 .photo-grid__item {
@@ -254,6 +266,12 @@
         margin-left: 48px;
     }
 
+    .photo-grid {
+        grid-template-columns: repeat(3, 300px);
+        gap: 14px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
 }
 
 /* Breakpoint w-768px */
@@ -286,6 +304,14 @@
         margin-top: 88px;
         margin-left: 24px;
         margin-right: 24px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 352px);
+        gap: 16px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 88px;
     }
 }
 
@@ -366,5 +392,12 @@
         font-size: 32px;
         font-weight: 900;
         line-height: 1.09;
+    }
+
+    .photo-grid {
+        grid-template-columns: 288px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 64px;
     }
 }
