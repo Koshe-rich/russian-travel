@@ -22,6 +22,7 @@
     .cover {
         max-width: 768px;
         background-size: contain;
+        min-height: 480px;
     }
 }
 
@@ -29,7 +30,6 @@
     .cover {
         max-width: 320px;
         background-size: contain;
-        max-height: 200px;
         min-height: 200px;
     }
 }
