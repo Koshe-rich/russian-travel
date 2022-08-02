@@ -346,7 +346,6 @@
     background-color: #2A2C2F;
     z-index: 1;
     width: 100%;
-    min-height: ;
 }
 
 .cover:hover .cover__overlay {
@@ -363,11 +362,39 @@
     max-width: 100%;
 }
 
-.footer {}
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 92px;
+    max-height: 18px;
+    max-width: 1184px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
 
-.footer__link {}
+.footer__link {
+    margin-right: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.12;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-.footer__copyright {}
+.footer__link:hover {
+    opacity: 0.8;
+}
+
+.footer__copyright {
+    margin-top: 0px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+}
 
 /* Breakpoint w-1024px */
 @media (max-width: 1024px) {
@@ -433,6 +460,10 @@
     .cover__title {
         margin-top: 195px;
     }
+
+    .footer {
+        max-width: 928px;
+    }
 }
 
 /* Breakpoint w-768px */
@@ -491,6 +522,8 @@
         max-width: 720px;
         grid-template-columns: 340px 352px;
         margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .place__paragraph {
@@ -506,6 +539,11 @@
 
     .cover__title {
         margin-top: 115px;
+    }
+
+    .footer {
+        max-width: 720px;
+        margin-top: 88px;
     }
 }
 
@@ -637,7 +675,8 @@
     .cover {
         max-width: 320px;
         background-size: contain;
-        max-height: 320px;
+        max-height: 200px;
+        min-height: 200px;
     }
 
     .cover__title {
@@ -654,5 +693,33 @@
 
     .cover__overlay {
         max-width: 320px;
+        max-height: 200px;
+    }
+
+    .footer {
+        flex-direction: column;
+        margin-top: 64px;
+        margin-right: 118px;
+        margin-left: 16px;
+        max-width: 186px;
+        max-height: 310px;
+    }
+
+    .footer__link {
+        margin-right: 0px;
+        margin-bottom: 32px;
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    .footer__link:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .footer__copyright {
+        margin-bottom: 0px;
+        margin-top: 48px;
+        font-size: 14px;
+        margin-left: 0px;
     }
 }
