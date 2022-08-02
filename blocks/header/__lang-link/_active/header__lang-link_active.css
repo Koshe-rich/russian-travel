@@ -1,0 +1,4 @@
+.header__lang-link_active {
+    /* Используется булевый БЭМ-модификатор для подчёркивания одного из языков. */
+    text-decoration: underline;
+}

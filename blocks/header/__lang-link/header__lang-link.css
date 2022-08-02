@@ -1,0 +1,30 @@
+.header__lang-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    line-height: 1.17;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.header__lang-link:hover {
+    /* Все ссылки и интерактивные элементы имеют состояние наведения :hover. */
+    opacity: 80%;
+}
+
+.header__lang-link:first-of-type {
+    margin-right: 18px;
+    margin-left: auto;
+}
+
+@media (max-width: 320px) {
+    .header__lang-link {
+        line-height: 1.11;
+        font-size: 18px;
+        margin-top: 14px;
+        margin-bottom: 8px;
+    }
+}

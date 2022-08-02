@@ -304,6 +304,7 @@
     margin-bottom: 0px;
     min-height: 740px;
 }
+
 .cover__title {
     color: #FFFFFF;
     font-size: 72px;
@@ -317,7 +318,6 @@
     text-align: center;
     z-index: 2;
     margin-top: 245px;
-
 }
 
 .cover__subtitle {
@@ -638,10 +638,6 @@
         max-height: 100%;
     }
 
-    .place__title {
-        font-size: 32px;
-    }
-
     .place {
         grid-template-columns: 320px;
         margin-bottom: 50px;
@@ -650,12 +646,8 @@
 
     .place__title {
         max-width: 288px;
-        margin-left: 16px
-    }
-
-    .place__website {
-        max-width: 288px;
-        margin-left: 16px
+        margin-left: 16px;
+        font-size: 32px;
     }
 
     .container {
@@ -669,6 +661,8 @@
     }
 
     .place__website {
+        max-width: 288px;
+        margin-left: 16px;
         margin-top: 0px;
     }
 
