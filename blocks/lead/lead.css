@@ -1,4 +1,5 @@
 .lead {
+    width: calc((984 / 1280) / 100%);
     max-width: 984px;
     max-height: 1005px;
     margin-top: 56px;
@@ -6,13 +7,14 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
-
+    border: solid red;
 }
 
 @media (max-width: 1024px) {
     .lead {
         max-width: 928px;
-        min-height: 962px;
+        width: calc((928 / 1024) * 100%);
+        margin-top: 48px;
         margin-top: 48px;
     }
 }
@@ -20,7 +22,7 @@
 @media (max-width: 768px) {
     .lead {
         max-width: 768px;
-        max-height: 862px;
+        width: calc((768 / 768) * 100%);
     }
 }
 
