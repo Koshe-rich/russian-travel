@@ -1,23 +1,27 @@
-.wrapper {
-    width: 1280px;
+/* .wrapper {
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 48px;
 }
 
 @media (max-width: 1024px) {
     .wrapper {
-        width: 1024px;
+        max-width: 1024px;
+        padding: 0 calc(24px + (48 - 24) * ((100vw - 768px) / (1024 - 768)));
     }
 }
 
+
 @media (max-width: 768px) {
     .wrapper {
-        width: 768px;
+        max-width: 768px;
+        padding: 0 calc(16px + (24 - 16) * ((100vw - 320px) / (768 - 320)));
     }
 }
 
 @media (max-width: 320px) {
     .wrapper {
-        width: 320px;
+        max-width: 320px;
     }
-}
+} */
