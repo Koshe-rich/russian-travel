@@ -2,14 +2,24 @@
     display: flex;
     max-width: 456px;
     flex-direction: column;
-    height: 46px;
     align-self: flex-end;
     margin-left: 0px;
 }
 
-@media (max-width: 320px) {
-    
+@media (max-width: 1024px) {
+    .place__website {
+        /* width: calc(352px + (456 - 352) * ((100vw - 768px) / (1024 - 768))); */
+    }
+}
 
+@media (max-width: 768px) {
+    .place__website {
+        max-width: 352px;
+        /* width: calc(288px + (352 - 288) * ((100vw - 320px) / (768 - 320)));    */
+    }
+}
+
+@media (max-width: 320px) {
 .place__website {
     max-width: 288px;
     margin-left: 16px;

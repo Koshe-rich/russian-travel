@@ -5,18 +5,38 @@
     line-height: 1.06;
     margin-bottom: 0px;
     margin-top: 0px;
-    align-self: end;
+    max-width: 460px;
+    width: calc(440px + (460 - 440) * ((100vw - 1024px) / (1280 - 1024)));
 }
 
+@media (max-width: 1024px) {
+    .place__title {
+        width: calc(340px + (440 - 340) * ((100vw - 768px) / (1024 - 768)));
+        max-width: 440px;
+        font-size: calc(42px + (72 - 42) * ((100vw - 768px) / (1024 - 768)));
+    }
+}
 @media (max-width: 768px) {
     .place__title {
+        max-width: 340px;
         font-size: 42px;
         line-height: 1.1;
+        width: calc(288px + (340 - 288) * ((100vw - 320px) / (768 - 320)));
+    }
+}
+
+@media (max-width:701px) {
+    .place__title {
+        text-align: center;
+        justify-self: center;
+        width: calc(288px + (340 - 288) * ((100vw - 320px) / (768 - 320)));
     }
 }
 
 @media (max-width: 320px) {
     .place__title {
+        text-align: start;
+        justify-self: start;
         max-width: 288px;
         margin-left: 16px;
         font-size: 32px;
