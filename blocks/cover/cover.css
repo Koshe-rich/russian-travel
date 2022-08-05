@@ -5,32 +5,31 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
-    min-height: 740px;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
+    min-height: 740px;
     width: calc(1024px + (1184 - 1024) * ((100vw - 1024px) / (1280 - 1024)));
 }
 
-/* @media (max-width: 1280px) {
+@media (max-width: 1280px) {
     .cover {
-        width: calc(1024px + (1184 - 1024) * ((100vw - 1024px) / (1280 - 1024)));
+        min-height: calc(640px + (740 - 640) * ((100vw - 768px) / (1280 - 1024)));
     }
-} */
+}
 
 @media (max-width: 1024px) {
     .cover {
         width: calc(768px + (1024 - 768) * ((100vw - 768px) / (1024 - 768)));
         max-width: 1024px;
-        min-height: 640px;
+        min-height: calc(480px + (640 - 480) * ((100vw - 768px) / (1024 - 768)));
     }
 }
 
 @media (max-width: 768px) {
     .cover {
         max-width: 768px;
-        min-height: 480px;
-        width: calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320px)));
+        /* width: calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320px))); */
     }
 }
 
