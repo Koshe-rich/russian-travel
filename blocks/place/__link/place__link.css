@@ -14,7 +14,7 @@
 
 @media (max-width: 1024px) {
     .place__link {
-        width: calc(352px + (456 - 325) * ((100vw - 768px) / (1024 -768)));
+        width: calc(352px + (456 - 325) * ((100vw - 768px) / (1024 - 768)));
     }
 }
 
