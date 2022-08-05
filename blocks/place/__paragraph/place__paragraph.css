@@ -11,12 +11,6 @@
 
 }
 
-@media (max-width: 1280px) {
-    .place__paragraph {
-    /* width: calc(456px + (484 - 456) * ((100vw - 1024px) / (1280 - 1024))); */
-    }
-}
-
 .place__paragraph:last-of-type {
     margin-bottom: 0px;
 }
@@ -25,7 +19,6 @@
     .place__paragraph {
         max-width: 456px;
         margin-bottom: 27px;
-        /* width: calc(352px + (456 - 352) * ((100vw - 768px) / (1024 -768))); */
     }
 }
 
@@ -33,9 +26,7 @@
     .place__paragraph {
         max-width: 352px;
         font-size: 16px;
-        font-weight: 1.63;
         margin-bottom: 25px;
-        /* width: calc(288px + (325 - 288) * ((100vw - 320px) / (768 - 320)));   */
     }
 }
 
