@@ -28,7 +28,7 @@
 @media (max-width: 768px) {
     .cover__subtitle {
         margin-top: calc(16px + (32 - 16) * ((100vw - 320px) / (768 - 320)));
-        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (768 - 320)))
+        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (768 - 320)));
     }
 }
 

@@ -16,7 +16,7 @@
 @media (max-width: 768px) {
     .intro__title {
         width: calc(288px + (720 - 288) * ((100vw - 320px) / (768 - 320)));
-        font-size: calc(32px + (54px - 32px) * ((100vw - 320px) / (768 - 320)));
+        font-size: calc(32px + (54 - 32) * ((100vw - 320px) / (768 - 320)));
     }
 }
 
