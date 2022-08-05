@@ -4,32 +4,39 @@
     margin-top: 92px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 0px;
     min-height: 740px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(1024px + (1184 - 1024) * ((100vw - 1024px) / (1280 - 1024)));
 }
+
+/* @media (max-width: 1280px) {
+    .cover {
+        width: calc(1024px + (1184 - 1024) * ((100vw - 1024px) / (1280 - 1024)));
+    }
+} */
 
 @media (max-width: 1024px) {
     .cover {
+        width: calc(768px + (1024 - 768) * ((100vw - 768px) / (1024 - 768)));
         max-width: 1024px;
-        background-size: contain;
-        max-height: 740px;
+        min-height: 640px;
     }
 }
 
 @media (max-width: 768px) {
     .cover {
         max-width: 768px;
-        background-size: contain;
         min-height: 480px;
+        width: calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320px)));
     }
 }
 
 @media (max-width: 320px) {
     .cover {
         max-width: 320px;
-        background-size: contain;
         min-height: 200px;
     }
 }
