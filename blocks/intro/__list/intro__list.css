@@ -2,19 +2,12 @@
     color: #FFFFFF;
     list-style-type: none;
     padding-left: 0px;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 1.5;
     margin-bottom: 0px;
     margin-top: 33px;
     max-width: 720px;
-}
-
-
-@media (max-width: 768px) {
-    .intro__title {
-        max-width: 720px;
-    }
 }
 
 @media (max-width: 320px) {

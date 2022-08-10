@@ -9,4 +9,4 @@
 
 ___
 
-Результат верстки был размещен на хостинге GiHub и доступен по [ссылке](https://koshe-rich.github.io/russian-travel/)
+Результат верстки был размещен на хостинге GitHub и доступен по [ссылке](https://koshe-rich.github.io/russian-travel/)

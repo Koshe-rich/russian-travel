@@ -7,17 +7,11 @@
     margin-top: 0px;
     margin-bottom: 0px;
     max-width: 456px;
-}
-
-@media (max-width: 1024px) {
-    .place__url-heading {
-        /* width: calc(352px + (456 - 325) * ((100vw - 768px) / (1024 - 768))); */
-    }
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
     .place__url-heading {
         max-width: 352px;
-        /* width: calc(288px + (325 - 288) * ((100vw - 320px) / (768 - 320)));    */
     }
 }

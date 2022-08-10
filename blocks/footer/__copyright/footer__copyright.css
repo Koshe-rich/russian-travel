@@ -12,16 +12,5 @@
     .footer__copyright {
         margin-bottom: 0px;
         margin-top: 48px;
-        font-size: 14px;
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 320px) {
-    .footer__copyright {
-        margin-bottom: 0px;
-        margin-top: 48px;
-        font-size: 14px;
-        margin-left: 0px;
     }
 }

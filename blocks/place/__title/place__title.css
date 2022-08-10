@@ -29,7 +29,6 @@
     .place__title {
         text-align: center;
         justify-self: center;
-        width: calc(288px + (340 - 288) * ((100vw - 320px) / (768 - 320)));
     }
 }
 

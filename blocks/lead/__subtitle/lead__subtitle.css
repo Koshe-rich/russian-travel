@@ -18,11 +18,10 @@
         width: calc(288px + (640 - 288) * ((100vw - 320px) / (768 - 320)));
         font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (768 - 320)));
     }
-    
 }
 
 @media (max-width: 320px) {
     .lead__subtitle {
-        font-weight: 1.25;
+        line-height: 1.25;
     }
 }
