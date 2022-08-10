@@ -6,8 +6,6 @@
     align-items: center;
     text-decoration: none;
     max-width: 1184px;
-    justify-content: center;
-    align-items: center;
     width: calc(1024px + (1184 - 1024) * ((100vw - 1024px) / (1280 - 1024)));
     z-index: 1;
 }
@@ -20,7 +18,7 @@
 
 @media (max-width: 768px) {
     .cover__link{
-        width: calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320px)));
+        width: calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320)));
     }
 }
 
