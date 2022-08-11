@@ -1,31 +1,32 @@
-.container {
+.place__description {
     margin: 0 0;
     max-width: 484px;
 
 }
 
-@media (max-width: 1280px) {
-    }
-
-
 @media (max-width: 1024px) {
-    .container {
+    .place__description {
         max-width: 456px;
         /* width: calc(352px + (456 - 352) * ((100vw - 768px) / (1024 -768))); */
     }
 }
 
 @media (max-width: 768px) {
-    .container {
-        max-width: 352px;
-        /* width: calc(288px + (325 - 288) * ((100vw - 320px) / (768 - 320)));   */
+    .place__description {
+        max-width: 352px;  
+    }
+}
+
+@media (max-width: 700px) {
+    .place__description {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(288px + (352 - 288) * ((100vw - 320px) / (700 - 320)));
     }
 }
 
 @media (max-width: 320px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
+    .place__description {
         max-width: 288px;
     }
 }

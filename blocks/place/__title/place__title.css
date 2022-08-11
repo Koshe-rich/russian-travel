@@ -1,5 +1,6 @@
 .place__title {
     color: #FFFFFF;
+    text-align: start;
     font-weight: 900;
     font-size: 72px;
     line-height: 1.06;
@@ -25,17 +26,8 @@
     }
 }
 
-@media (max-width:701px) {
-    .place__title {
-        text-align: center;
-        justify-self: center;
-    }
-}
-
 @media (max-width: 320px) {
     .place__title {
-        text-align: start;
-        justify-self: start;
         max-width: 288px;
         margin-left: 16px;
         font-size: 32px;

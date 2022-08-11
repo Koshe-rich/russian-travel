@@ -3,6 +3,7 @@
     color: #FFFFFF;
     margin-left: auto;
     margin-right: 0;
+    margin-bottom: 0;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
@@ -12,5 +13,7 @@
     .footer__copyright {
         margin-bottom: 0px;
         margin-top: 48px;
+        margin-left: 0px;
+        line-height: 1;
     }
 }
