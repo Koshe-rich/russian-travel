@@ -4,6 +4,7 @@
     grid-template-columns: 47% 1fr;
     align-items: start;
     grid-row-gap: 48px;
+    height: auto;
 }
 
 @media (max-width: 1024px) {

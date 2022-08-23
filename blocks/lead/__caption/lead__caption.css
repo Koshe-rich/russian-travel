@@ -19,6 +19,6 @@
 
 @media (max-width: 768px) {
     .lead__caption {
-        margin-left: calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+        margin-left: calc(16px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
     }
 }

@@ -5,10 +5,9 @@
     background-size: contain;
     max-width: 984px;
     margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 64px;
-    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
     height: calc(580px + (615 - 580) * ((100vw - 1024px) / (1280 - 1024)));
 }
 
@@ -22,6 +21,7 @@
     .lead__image {
         height: calc(480px + (580 - 480) * ((100vw - 768px) / (1024 - 768)));
         margin-top: 56px;
+        max-width: 928px;
     }
 }
 

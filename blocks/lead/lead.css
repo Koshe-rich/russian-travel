@@ -5,13 +5,21 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    max-width: 984px;
     width: 100%;
+    max-width: 984px;
+}
+
+@media (max-width: 1280px) {
+    .lead {
+        max-width: calc(928px + (984 - 928) * ((100vw - 1024px) / (1280 - 1024)));
+        margin-top: calc(48px + (56 - 48) * ((100vw - 1024px) / (1280 - 1024)));
+    }
 }
 
 @media (max-width: 1024px) {
     .lead {
-        margin-top: calc(48px + (56 - 48) * ((100vw - 768px) / (1024 - 768)));
+        margin-top: 48px;
+        max-width: calc(768px + (928 - 768) * ((100vw - 768px) / (1024 - 768)));
     }
 }
 
