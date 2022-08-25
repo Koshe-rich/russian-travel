@@ -4,15 +4,21 @@
     object-fit: cover;
 }
 
+@media (max-width: 1280px) {
+    .place__image {
+        max-width: calc(440px + (460 - 440) * ((100vw - 1024px) / (1280 - 1024)));
+    }
+}
+
 @media (max-width: 1024px) {
     .place__image {
-        max-width: 440px;
+        max-width: calc(340px + (440 - 340) * ((100vw - 768px) / (1024 - 768)));
     }
 }
 
 @media (max-width: 768px) {
     .place__image {
-        max-width: 340px;
+        max-width: calc(320px + (340 - 320) * ((100vw - 320px) / (768 - 320)));
     }
 }
 
